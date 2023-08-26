@@ -1,6 +1,5 @@
 version: 2.1
 
-working_directory: ~/pipelinelesson
 jobs
   build:
     working_directory: ~/pipelinelesson
