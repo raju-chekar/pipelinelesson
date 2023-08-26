@@ -1,6 +1,7 @@
 version: 2.1
 
-jobs:
+working_directory: ~/pipelinelesson
+jobs
   build:
     docker:
       - image: circleci/node:13.8.0
