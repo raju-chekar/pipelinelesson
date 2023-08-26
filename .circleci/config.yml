@@ -3,6 +3,7 @@ version: 2.1
 working_directory: ~/pipelinelesson
 jobs
   build:
+    working_directory: ~/pipelinelesson
     docker:
       - image: circleci/node:13.8.0
     steps:
@@ -10,6 +11,7 @@ jobs
       - run: npm i
       - run: npm run lint
   test:
+    working_directory: ~/pipelinelesson
     docker:
       - image: circleci/node:13.8.0
     steps:
@@ -17,6 +19,7 @@ jobs
       - run: npm i
       - run: npm run test
   analyze:
+    working_directory: ~/pipelinelesson
     docker:
       - image: circleci/node:13.8.0
     steps:
